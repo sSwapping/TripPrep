@@ -1,17 +1,17 @@
 import { Button } from "./Button";
 
 const buttons = [
-  { type: "secondary", text: "Mark all as complete" },
-  { type: "secondary", text: "Mark all as incomplete" },
-  { type: "secondary", text: "Reset to initial" },
-  { type: "secondary", text: "Remove all items" },
+  { text: "Mark all as complete" },
+  { text: "Mark all as incomplete" },
+  { text: "Reset to initial" },
+  { text: "Remove all items" },
 ];
 
 export const ButtonGroup = () => {
   return (
     <section>
       {buttons.map((button) => (
-        <Button key={button.text} type={button.type}>
+        <Button key={button.text} type={"secondary"}>
           {button.text}
         </Button>
       ))}
