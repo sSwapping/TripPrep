@@ -1,10 +1,10 @@
 import { AddItemForm } from "./AddItemForm";
 import { ButtonGroup } from "./ButtonGroup";
 
-export const Sidebar = () => {
+export const Sidebar = ({ handleAddItems }) => {
   return (
     <div>
-      <AddItemForm />
+      <AddItemForm handleAddItems={handleAddItems} />
       <ButtonGroup />
     </div>
   );
