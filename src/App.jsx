@@ -1,5 +1,13 @@
+import "./App.css";
+import { Footer } from "./components/Footer";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <main></main>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
